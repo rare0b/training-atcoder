@@ -1,0 +1,26 @@
+'''
+ABC277 C問題
+https://atcoder.jp/contests/abc277/tasks/abc277_c
+'''
+from sys import stdin
+from collections import defaultdict, deque
+
+n = int(stdin.readline().rstrip())
+graph = defaultdict(list)  # 無向グラフ(双方向)を辞書型リストで管理
+
+for _ in range(n):
+  a, b = [int(x) for x in stdin.readline().rstrip().split()]
+  graph[a].append(b)
+  graph[b].append(a)
+
+que = deque()
+que.append(1)  # 初期位置(1)
+S = {1}  # 走査したところ、set型
+while que:
+  v = que.popleft()  # 先頭から取り出し(queue構造、幅優先探索)
+  for i in graph[v]:  # 1と繋がる頂点から走査開始
+    if not i in S:  # 走査先がSに含まれないときはqueとSに追加
+      que.append(i)
+      S.add(i)
+      
+print(max(S))
