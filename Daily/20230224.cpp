@@ -1,7 +1,8 @@
 #include <bits/stdc++.h>
 
-#include <atcoder/all>
+#include <atcoder/dsu>
 using namespace std;
+using namespace atcoder;
 using ll = long long;
 
 // https://atcoder.jp/contests/abl/tasks/abl_c
@@ -17,9 +18,16 @@ int main() {
     cin >> a >> b;
     a--;
     b--;
-    uf.marge(a, b);
+    uf.merge(a, b);
+    // cout << uf.merge(a, b) << endl;
   }
-
+  // int xcount = 0;
+  // for (auto x : uf.groups()) {
+  //   for (auto y : x) {
+  // 		cout << xcount << ' ' << y << endl;
+  //   }
+  //   xcount++;
+  // }
   int ans = uf.groups().size() - 1;
   cout << ans << endl;
 }
