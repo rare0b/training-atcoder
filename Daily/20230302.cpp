@@ -2,7 +2,7 @@
 using namespace std;
 using ll = long long;
 
-//
+// https://atcoder.jp/contests/agc012/tasks/agc012_a
 
 int main() {
     long n;
