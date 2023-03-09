@@ -2,8 +2,8 @@
 
 #include <atcoder/all>
 
-using namespace atcoder;
 using namespace std;
+using namespace atcoder;
 using ll = long long;
 
 //
