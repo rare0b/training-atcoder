@@ -1,0 +1,23 @@
+・Union-Find
+要素をグループとしてみて、同じグループか判断したり、グループ併合したりできる。
+根付き木で実装。
+グラフが連結かどうかの判断にも使える。(グループなら連結、グループじゃないなら連結じゃない)
+<atcoder/dsu>ならならしO(α(n))≒O(1)？
+Union-Findの実装 https://algo-method.com/descriptions/136
+
+・next_permutation
+組み合わせの数全列挙に便利
+// 昇順にソート済みの入力
+  std::vector<int> v = {1, 2, 3};
+do {
+    print(v);
+} while (std::next_permutation(v.begin(), v.end()));
+
+  |
+  V
+1 2 3 
+1 3 2 
+2 1 3 
+2 3 1 
+3 1 2 
+3 2 1 
