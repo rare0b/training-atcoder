@@ -5,4 +5,4 @@
 
 ## Commit Message Templates (last updated on 2023-03-22)
 + Solved 1AC on YYYY-MM-DD
-+ Solved up to problem D in ABC000 on YYYY-MM-DD
++ Solved up to problem [A-G] in ABC000 on YYYY-MM-DD
