@@ -12,14 +12,15 @@ int main() {
     string s;
     cin >> s;
     vector<int> sa = suffix_array(s);
-    for (auto x : sa) {
-        cout << x << " ";
-    }
+    // for (auto x : sa) {
+    //     cout << x << " ";
+    // }
+    // cout << endl;
     long long ans = s.size() * (s.size() + 1) / 2;
-    for (auto x : lcp_array(s, sa)) {
-        ans -= x;
-        cout << x << " ";
-    }
-    cout << endl;
+    // for (auto x : lcp_array(s, sa)) {
+    //     ans -= x;
+    //     cout << x << " ";
+    // }
+    // cout << endl;
     cout << ans << endl;
 }
