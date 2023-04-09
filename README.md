@@ -1,7 +1,7 @@
 # :four_leaf_clover:training-atcoder
-**このリポジトリでは、AtCoder ProblemsのRecommendation問題、さまざまなコンテスト、競プロ本で、競プロの練習をします**
+**このリポジトリでは、さまざまなコンテスト、AtCoder ProblemsのRecommendation問題、アルゴ式、競プロ本で、競プロの練習をします**
 
-*Practice kyopro with AtCoder Problems Recommendations, various contests, and kyopro books*
+*Practice kyopro with various contests, AtCoder Problems Recommendations, algo-method, and kyopro books*
 
 ## Commit Message Templates (last updated on 2023-03-22)
 + Solved 1AC on YYYY-MM-DD
