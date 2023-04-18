@@ -1,0 +1,17 @@
+○STL
+・next_permutation
+組み合わせの数全列挙に便利
+// 昇順にソート済みの入力
+  std::vector<int> v = {1, 2, 3};
+do {
+    print(v);
+} while (std::next_permutation(v.begin(), v.end()));
+
+  |
+  V
+1 2 3 
+1 3 2 
+2 1 3 
+2 3 1 
+3 1 2 
+3 2 1
