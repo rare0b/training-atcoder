@@ -13,10 +13,8 @@ int main() {
     cin >> a >> b;
 
     int ans = 1;
-    for (int i = a; i < b; i++) {
-        for (int j = i + 1; j <= b; j++) {
-            ans = max(ans, gcd(i, j));
-        }
+    for (int i = b; i > 0; i--) {
+        if (b / i - (a - 1) / i >= 2) ans = max(ans, i);
     }
 
     cout << ans << endl;
