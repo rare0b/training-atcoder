@@ -9,53 +9,30 @@ using ll = long long;
 //
 
 int main() {
+    // 今回のように、↑へフィールド外に出たものが、↓から出てくるようなループ構造のとき
+    // MODを思い出す。MODでだいたいのことはできる
+
     int H, W;
     cin >> H >> W;
-    vector<string> C(H);
-    for (int i = 0; i < H; i++) cin >> C[i];
-    vector<int> ah, bh, aw, bw;
+    vector<string> A(H), B(H);
+    for (int i = 0; i < H; i++) cin >> A[i];
+    for (int i = 0; i < H; i++) cin >> B[i];
 
-    for (int i = 0; i < H; i++) {
-        int cnt = 0;
-        for (int j = 0; j < W; j++) {
-            char c = C[i][j];
-            if (c == '#') cnt++;
+    for (int s = 0; s < H; s++) {
+        for (int t = 0; t < W; t++) {
+            bool flag = true;
+            for (int i = 0; i < H; i++) {
+                for (int j = 0; j < W; j++) {
+                    int p = (i - s + H) % H, q = (j - t + W) % W;
+                    if (A[p][q] != B[i][j]) flag = false;
+                }
+            }
+            if (flag) {
+                cout << "Yes" << endl;
+                return 0;
+            }
         }
-        ah.push_back(cnt);
     }
-    for (int j = 0; j < W; j++) {
-        int cnt = 0;
-        for (int i = 0; i < H; i++) {
-            char c = C[i][j];
-            if (c == '#') cnt++;
-        }
-        aw.push_back(cnt);
-    }
-
-    for (int i = 0; i < H; i++) {
-        int cnt = 0;
-        for (int j = 0; j < W; j++) {
-            char c = C[i][j];
-            if (c == '#') cnt++;
-        }
-        bh.push_back(cnt);
-    }
-    for (int j = 0; j < W; j++) {
-        int cnt = 0;
-        for (int i = 0; i < H; i++) {
-            char c = C[i][j];
-            if (c == '#') cnt++;
-        }
-        bw.push_back(cnt);
-    }
-
-    sort(ah.begin(), ah.end());
-    sort(bh.begin(), bh.end());
-    sort(aw.begin(), aw.end());
-    sort(bw.begin(), bw.end());
-
-    if (bh == ah && bw == aw)
-        cout << "Yes" << endl;
-    else
-        cout << "No" << endl;
+    cout << "No" << endl;
+    return 0;
 }
