@@ -1,0 +1,13 @@
+F=20230504 // 拡張子を含まないファイル名
+acc // atcoder compile
+act // atcoder test
+
+
+
+// 環境が変わるとき、以下の記事を参考に、VSCodeのターミナルをbashにする
+// https://tenshoku-miti.com/takeshi/windows-vscode-ternimal-ubuntu/
+
+// また、~/.bashrcのエイリアスに以下を追加。編集後、シェル再起動しない場合はsource ~/.bashrcで読み込む
+# g++ alias
+alias acc='g++ $F.cpp -std=c++17 -o out.out -I /mnt/c/Users/rare/git/training-atcoder/ac-library'
+alias act='./out.out < ./in.txt'
