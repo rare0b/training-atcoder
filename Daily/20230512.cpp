@@ -9,13 +9,13 @@ using ll = long long;
 // https://atcoder.jp/contests/agc027/tasks/agc027_a
 
 int main() {
-    int N;
+    ll N;
     cin >> N;
-    int x;
+    ll x;
     cin >> x;
-    vector<int> a(N);
-    int sum = 0;
-    for (int i = 0; i < N; i++) {
+    vector<ll> a(N);
+    ll sum = 0;
+    for (ll i = 0; i < N; i++) {
         cin >> a[i];
         sum += a[i];
     }
@@ -28,9 +28,9 @@ int main() {
     }
 
     sort(a.begin(), a.end());
-    int ans = 0;
+    ll ans = 0;
 
-    for (int i = 0; i < N; i++) {
+    for (ll i = 0; i < N; i++) {
         if (x - a[i] >= 0) {
             x -= a[i];
             ans++;
