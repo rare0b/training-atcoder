@@ -6,7 +6,7 @@ using namespace std;
 using namespace atcoder;
 using ll = long long;
 
-// https://atcoder.jp/contests/arc159/tasks/arc159_a
+// https://atcoder.jp/contests/abc048/tasks/abc048_b
 
 int main() {
     ll a, b, x;
