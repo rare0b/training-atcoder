@@ -1,2 +1,9 @@
-6
-0 153 10 10 23
+8
+a
+aa
+aaa
+aaaa
+aaaaa
+aaaaaa
+aaa
+aaaaaaa
