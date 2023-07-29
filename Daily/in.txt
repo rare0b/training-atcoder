@@ -1,9 +1,3 @@
-8
-a
-aa
-aaa
-aaaa
-aaaaa
-aaaaaa
-aaa
-aaaaaaa
+3 2
+100 100 100
+80 120
