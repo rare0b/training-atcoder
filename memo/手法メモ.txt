@@ -1,3 +1,7 @@
 pairの降順ソート
 sort(VW.rbegin(), VW.rend());
 pairで2番目の値でソートしたい場合、それを1番目の値に持ってくると良い
+
+大文字小文字
+static_cast<char>(toupper(c))
+static_cast<char>(tolower(c))
