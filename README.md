@@ -3,6 +3,6 @@
 
 *Practice kyopro with various contests, AtCoder Problems Recommendations, algo-method, and kyopro books*
 
-## Commit Message Templates (last updated on 2023-03-22)
+## Commit Message Templates
 + 1AC
 + ABC000
